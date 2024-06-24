@@ -2,5 +2,10 @@ install axios
 vite&latest
 
 
-
-api key
+#API 
+[API MOVIE]{https://www.themoviedb.org/}
+Create Project
+```
+npm create vite@latest
+```
+select Typescript + SWC

@@ -1,5 +1,5 @@
 # API 
-### [API MOVIE]{https://www.themoviedb.org/}
+### [API MOVIE](https://www.themoviedb.org/)
 Create Project
 ```
 npm create vite@latest

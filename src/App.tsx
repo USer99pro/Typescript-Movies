@@ -1,5 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import Pagination from "./Components/Pagination.tsx";
+import './Components/Paginaton.css';
+import './App.css'
 
 interface MoviesApiResponse {
 
@@ -69,6 +72,9 @@ const App = () => {
     facthMovies(year,page);
   } ,[year]);
 
+  useEffect(()=>{
+    facthMovies(year,page);
+  } ,[page]);
 
   return (
     <div>
@@ -98,7 +104,7 @@ const App = () => {
                 <h2 className='rate_text' >{data.vote_average}</h2>
               </div>
               <h2 className='title'>{data.title.substring(0,25)}</h2>
-              <img src={`${urlPoster}${data.poster_path}`} alt={data.title} />
+              <img className='img' src={`${urlPoster}${data.poster_path}`} alt={data.title} />
 
             </div>
             
@@ -107,7 +113,7 @@ const App = () => {
 
     </div>
 
-
+        <Pagination totalPages={10} onPageChange={hendlePageChange}/>
 
     </div>
   )

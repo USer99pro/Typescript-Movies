@@ -1,0 +1,16 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.pagecontainer{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+}
+a{
+    margin: 5px;
+    
+}

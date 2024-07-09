@@ -101,7 +101,7 @@ const App = () => {
             <div className="superContainer" key={data.title} >
 
               <div className='rate_container'>
-                <h2 className='rate_text' >{data.vote_average}</h2>
+                <h2 className='rate_text' >{data.vote_average.toFixed(2)}</h2>
               </div>
               <h2 className='title'>{data.title.substring(0,25)}</h2>
               <img className='img' src={`${urlPoster}${data.poster_path}`} alt={data.title} />
